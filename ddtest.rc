@@ -1,0 +1,399 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""ddtest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "ddtest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Copyright 2001",IDC_STATIC,47,14,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Manfred Lippert  mani@mani.de",IDC_STATIC,47,24,101,8
+    LTEXT           "André Betz  andre.betz@gmx.de",IDC_STATIC,47,33,103,8
+END
+
+IDD_DEMO_DIALOG DIALOGEX 0, 0, 63, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Demo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Ende",IDOK,7,173,49,14
+    PUSHBUTTON      "Load",IDC_RAW,7,7,49,14
+    PUSHBUTTON      "Scale",IDC_BMP,7,35,49,14
+    PUSHBUTTON      "Gauß",IDC_GAUSS,7,77,49,14
+    PUSHBUTTON      "Sobel",IDC_SOBEL,7,91,49,14
+    PUSHBUTTON      "Spreiz",IDC_SPREIZ,7,49,49,14
+    PUSHBUTTON      "Laplace",IDC_LAPLACE,7,105,49,14
+    PUSHBUTTON      "Kreis I",IDC_CIRCLE,7,133,49,14
+    PUSHBUTTON      "Save",IDC_SAVE,7,21,49,14
+    PUSHBUTTON      "Schwelle",IDC_THRESH,7,63,49,14
+    PUSHBUTTON      "Linien",IDC_LINES,7,119,49,14
+    PUSHBUTTON      "Kreis II",IDC_CIRCLE2,7,146,50,14
+    PUSHBUTTON      "Automatik",IDC_AUTOMATIK,7,160,50,14
+END
+
+IDD_SCALE_DLG DIALOG DISCARDABLE  0, 0, 179, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scale"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,122,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,122,24,50,14
+    EDITTEXT        IDC_SCALE_X,43,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALE_Y,43,23,40,14,ES_AUTOHSCROLL
+    LTEXT           "Scale X:",IDC_STATIC,7,9,28,8
+    LTEXT           "Scale Y:",IDC_STATIC,7,25,28,8
+END
+
+IDD_THRESH_DLG DIALOG DISCARDABLE  0, 0, 156, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Thresh"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,99,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,24,50,14
+    EDITTEXT        IDC_THRESH,45,8,40,14,ES_AUTOHSCROLL
+    LTEXT           "Thresh:",IDC_STATIC,13,10,25,8
+    CONTROL         "Average",IDC_AVERAGE,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,11,26,43,10
+END
+
+IDD_GAUSS_DLG DIALOG DISCARDABLE  0, 0, 156, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Gauss"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,99,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,24,50,14
+    EDITTEXT        IDC_GAUSSSIZE,45,15,40,14,ES_AUTOHSCROLL
+    LTEXT           "Size:",IDC_STATIC,13,18,16,8
+END
+
+IDD_SPREIZ_DLG DIALOG DISCARDABLE  0, 0, 156, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spreizen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,99,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,24,50,14
+    EDITTEXT        IDC_SPREIZWERT,45,15,40,14,ES_AUTOHSCROLL
+    LTEXT           "Wert:",IDC_STATIC,13,18,18,8
+END
+
+IDD_SOBEL_DLG DIALOG DISCARDABLE  0, 0, 156, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sobel"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,99,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,24,50,14
+    EDITTEXT        IDC_SOBELTHRESH,45,15,40,14,ES_AUTOHSCROLL
+    LTEXT           "Thresh:",IDC_STATIC,13,18,25,8
+    CONTROL         "Optimal:",IDC_OPTIMAL,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,12,32,41,10
+END
+
+IDD_LINES_DLG DIALOG DISCARDABLE  0, 0, 156, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Linien"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,99,54,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,69,50,14
+    EDITTEXT        IDC_ANGELS,45,8,40,14,ES_AUTOHSCROLL
+    LTEXT           "Winkel:",IDC_STATIC,7,10,25,8
+    EDITTEXT        IDC_LOT,45,23,40,14,ES_AUTOHSCROLL
+    LTEXT           "Abstand:",IDC_STATIC,7,26,29,8
+    EDITTEXT        IDC_THRESH,45,38,40,14,ES_AUTOHSCROLL
+    LTEXT           "Thresh:",IDC_STATIC,7,42,25,8
+    EDITTEXT        IDC_DELRAD,45,53,40,14,ES_AUTOHSCROLL
+    LTEXT           "DelRad:",IDC_STATIC,7,56,27,8
+    EDITTEXT        IDC_LINES,45,68,40,14,ES_AUTOHSCROLL
+    LTEXT           "Lines:",IDC_STATIC,7,72,20,8
+    CONTROL         "90 Grad Filter",IDC_FLT90GRAD,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,89,9,58,10
+END
+
+IDD_KREIS_DLG DIALOG DISCARDABLE  0, 0, 156, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kreis I"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,99,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,24,50,14
+    EDITTEXT        IDC_RADIUS,48,8,40,14,ES_AUTOHSCROLL
+    LTEXT           "Radius:",IDC_STATIC,7,10,25,8
+    EDITTEXT        IDC_TOLRAD,48,23,40,14,ES_AUTOHSCROLL
+    LTEXT           "Tol. Radius:",IDC_STATIC,7,26,39,8
+    EDITTEXT        IDC_TOLANG,48,38,40,14,ES_AUTOHSCROLL
+    LTEXT           "Tol. Winkel:",IDC_STATIC,7,42,39,8
+    EDITTEXT        IDC_RESO,48,52,40,14,ES_AUTOHSCROLL
+    LTEXT           "Auflösung:",IDC_STATIC,7,56,34,8
+END
+
+IDD_KREIS2_DLG DIALOG DISCARDABLE  0, 0, 156, 82
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kreis II"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,99,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,24,50,14
+    EDITTEXT        IDC_RADIUS,50,8,40,14,ES_AUTOHSCROLL
+    LTEXT           "Radius:",IDC_STATIC,7,10,25,8
+    EDITTEXT        IDC_TOLRAD,50,23,40,14,ES_AUTOHSCROLL
+    LTEXT           "Tol. Radius:",IDC_STATIC,7,26,39,8
+    EDITTEXT        IDC_SIZE_X,50,37,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SIZE_Y,50,51,40,14,ES_AUTOHSCROLL
+    LTEXT           "Auflösung X:",IDC_STATIC,7,41,41,8
+    LTEXT           "Auflösung Y:",IDC_STATIC,7,55,41,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MFC-Anwendung ddtest\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ddtest\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Demo.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Anwendung ddtest\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 56
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_SCALE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_THRESH_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_GAUSS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_SPREIZ_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_SOBEL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_LINES_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_KREIS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_KREIS2_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Inf&o über Demo..."
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "ddtest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.deu\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
